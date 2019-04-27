@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#021264</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ea6600</color>
+    <color name="primary_blue">#0066cc</color>
+    <color name="primary_links_blue">#2570e0</color>
+    <color name="primary_green">#5fa33b</color>
+    <color name="primary_orange">#df9911</color>
+    <color name="primary_white">#ffffff</color>
+    <color name="primary_dark_orange">#ea6600</color>
+    <color name="primary_cranberry">#b7114c</color>
+    <color name="primary_dark_grey">#333333</color>
+    <color name="primary_medium_grey">#666666</color>
+    <color name="primary_grey">#999999</color>
+    <color name="primary_light_grey">#d7d7d7</color>
+    <color name="primary_pale_grey">#e7e7e7</color>
+    <color name="primary_isid_red">#c81f25</color>
+    <color name="primary_isid_blue">#002955</color>
+    <color name="primary_isid_black">#000000</color>
+    <color name="primary_isid_blue_grey">#607D8B</color>
+    <color name="primary_isid_grey">#d3d3d3</color>
+    <color name="primary_isid_indigo">#3F51B5</color>
+
+    <color name="primary_trudon_red">#c81f25</color>
+    <color name="primary_trudon_blue">#002955</color>
+    <color name="primary_trudon_black">#000000</color>
+    <color name="primary_trudon_blue_grey">#607D8B</color>
+    <color name="primary_trudon_grey">#9E9E9E</color>
+    <color name="primary_trudon_indigo">#3F51B5</color>
+    <color name="primary_trudon_yellow">#ffff00</color>
+
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+
+    <color name="black_semi_transparent">#B2000000</color>
+
+    <color name="colorPrimary1">#673AB7</color>
+    <color name="colorPrimaryDark1">#4527A0</color>
+    <color name="colorAccent1">#E84F3E</color>
+
+</resources>

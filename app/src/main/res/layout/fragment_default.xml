@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="za.co.thamserios.basilread.views.fragments.DefaultFragment">
+
+
+    <LinearLayout
+        android:id="@+id/layout_private"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:gravity="center" >
+        <TextView
+            android:id="@+id/activityTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Activity"
+            android:textSize="34sp"
+            android:gravity="left"/>
+        <View
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/isidLogo"
+            android:background="#000000" />
+        <RelativeLayout
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Current Status: " />-->
+                <TextView
+                    android:id="@+id/statusTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Shift Started" />
+            </LinearLayout>
+            <za.co.thamserios.basilread.helper.RelativeTimeTextView
+                android:id="@+id/statusTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorPrimary"
+                android:text="">
+            </za.co.thamserios.basilread.helper.RelativeTimeTextView>
+        </RelativeLayout>
+
+
+
+
+        <Button
+            android:id="@+id/buttonFinished"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_blue"
+            android:textColor="@color/primary_white"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textAllCaps="false"
+            android:text="Completed"
+            />
+
+       <!-- <Button
+            android:id="@+id/standingFinished"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/primary_white"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textAllCaps="false"
+            android:text="Submit"
+            />
+
+        <Button
+            android:id="@+id/breakdownFinished"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/primary_white"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textAllCaps="false"
+            android:text="Submit"
+            /> -->
+
+    </LinearLayout>
+
+</FrameLayout>

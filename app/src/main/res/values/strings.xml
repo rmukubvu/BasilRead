@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">KELE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="done">Production Log</string>
+    <string name="text_production">Production</string>
+    <string name="text_breakdown">Breakdown</string>
+    <string name="text_standing">Standing Time</string>
+    <string name="StartShiftButtonText">Start Shift</string>
+    <string name="loginButtonText">Next</string>
+    <string name="access">Authorise</string>
+    <string name="cancel">Cancel</string>
+    <string name="text_finish">End Shift</string>
+    <string name="just_now">Just Now</string>
+    <string name="service_host">http://104.214.26.198:4567/</string>
+    <string-array name="drills_array">
+        <item>New</item>
+        <item>Redrill</item>
+    </string-array>
+
+    <string-array name="bit_size">
+        <item>140</item>
+        <item>165</item>
+    </string-array>
+
+    <string-array name="rod_size">
+        <item>9</item>
+    </string-array>
+
+
+    <string-array name="planned_array">
+        <item>Unplanned Maintenance</item>
+        <item>Planned Maintenance</item>
+    </string-array>
+
+    <string-array name="production_array">
+        <item>Production drilling</item>
+        <item>Ramp drilling</item>
+        <item>Pre-split drilling</item>
+        <item>Trim drilling</item>
+        <item>Tramming (blast to blast)</item>
+        <item>Filler holes</item>
+        <item>Re-drill</item>
+        <item>Re-entry period</item>
+        <item>Hole Collapse</item>
+        <item>Hole not finished</item>
+        <item>Line-up</item>
+        <item>Pre-start</item>
+    </string-array>
+
+    <string-array name="breakdown_array">
+        <item>Mech Engine</item>
+        <item>Aircon</item>
+        <item>Aquila System</item>
+        <item>Artisan not available</item>
+        <item>Electrical</item>
+        <item>Shock Sub</item>
+        <item>Washing Unit</item>
+        <item>Machine Inspection</item>
+        <item>Mine Damage</item>
+        <item>Lube/Oil/Coolant fill</item>
+        <item>Others</item>
+        <item>Mech Hydraul</item>
+        <item>Mech Leaks</item>
+        <item>Undercarriage</item>
+        <item>Wait Spares</item>
+    </string-array>
+
+    <string-array name="standing_array">
+        <item>Blasting</item>
+        <item>Wait Support Equipment</item>
+        <item>Fuelling</item>
+        <item>Mid Shift Break</item>
+        <item>Pre-Start Checks</item>
+        <item>Shift Change</item>
+        <item>Standby - No Operator</item>
+        <item>Standby - No Pattern</item>
+        <item>Others</item>
+        <item>Standby - Site cleanup</item>
+        <item>Toilet</item>
+        <item>Training</item>
+        <item>Water Filling</item>
+    </string-array>
+    <string name="title_activity_history">History</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_tabbed_history">TabbedHistoryActivity</string>
+    <string name="dialog_breakdown_title">Breakdown</string>
+    <string name="dialog_main_title">Shift Capture In Progress</string>
+    <string name="text_start_edit">Start Shift</string>
+
+</resources>

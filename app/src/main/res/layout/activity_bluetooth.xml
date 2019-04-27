@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="za.co.thamserios.basilread.views.BluetoothActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/relativeLayout2">
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="64dp"
+            app:srcCompat="@drawable/ic_basil_logo"
+            android:id="@+id/imageView"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:id="@+id/shiftTopText"
+            android:textColor="@color/primary_white"
+            android:text="Select Shift"/>
+        <TextView
+            android:layout_marginTop="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:textColor="@color/primary_white"
+            android:id="@+id/rigTopText"
+            android:text="Select Rig"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_below="@+id/relativeLayout2">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/titleNfc"
+                android:layout_width="0dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_weight=".20"
+                android:textSize="16sp"
+                android:text="File sending via Bluetooth"/>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Transfer Data"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@color/primary_blue"
+            android:textColor="@color/primary_white"
+            android:id="@+id/btnTransferData"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Close"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@color/primary_blue"
+            android:textColor="@color/primary_white"
+            android:id="@+id/btnCloseBlue"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

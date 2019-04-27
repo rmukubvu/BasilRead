@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="za.co.thamserios.basilread">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <application
+        android:name=".BasePhoneApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_basil_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/CustomActivityThemeNoActionBar">
+        <service
+            android:name=".services.PostingService"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.LandingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActivityThemeNoActionBar" />
+        <activity
+            android:name=".views.OperatorInputActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActivityThemeNoActionBar" />
+        <activity
+            android:name=".views.StartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActivityThemeNoActionBar" >
+            <intent-filter>
+                <action android:name="za.co.thamserios.basilread.views.StartActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.ShiftEndReportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActivityThemeNoActionBar" />
+        <activity
+            android:name=".views.USBActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActivityThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name=".views.NFCActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActivityThemeNoActionBar" />
+        <activity
+            android:name=".views.BluetoothActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActivityThemeNoActionBar" />
+        <activity
+            android:name=".views.HistoryActivity"
+            android:label="@string/title_activity_history"
+            android:theme="@style/CustomActivityThemeNoActionBar" />
+        <activity
+            android:name=".views.TabbedHistoryActivity"
+            android:label="@string/title_activity_tabbed_history"
+            android:theme="@style/CustomActivityThemeNoActionBar" />
+        <activity android:name=".views.LoginActivity"
+            android:theme="@style/CustomActivityThemeNoActionBar"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="za.co.thamserios.basilread.views.LoginActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name=".ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
